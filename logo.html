@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Ravennet</title>
+<style>
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+ }
+ .logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+ }
+ .logo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(45deg);
+ }
+ .logo::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    transform: rotate(-45deg);
+ }
+</style>
+</head>
+<body>
+
+<div class="logo">Ravennet</div>
+
+</body>
+</html>
