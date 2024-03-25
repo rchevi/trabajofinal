@@ -4,7 +4,6 @@ document.querySelectorAll('.piezas img').forEach(img => {
     });
 })
 
-
 document.querySelectorAll('.solucion').forEach(solucion => {
     solucion.addEventListener('dragover', function(e) {
         e.preventDefault();

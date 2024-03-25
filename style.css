@@ -3,7 +3,6 @@
    padding: 0;
    }
 
-
 body{
    background-color: rgb(24, 28, 48);
    font-family: 'montserrat'
@@ -229,15 +228,26 @@ video{
    color: #ffffff;
 }
 
+.solucion > p{
+   position: absolute;
+   
+}
+
 .piezas{
    border: none;
    background-color: none;
    margin-top: 30px;
 }
 
-.piezas img, .solucion img{
+.piezas > img{
    width: 100%;
    height: 100%;
+}
+
+.solucion > img{
+   width: 100%;
+   height: 100%;
+   z-index: 2
 }
 
 #reiniciar{
