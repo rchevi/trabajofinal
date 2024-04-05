@@ -25,6 +25,5 @@ document.getElementById('reiniciar').addEventListener('click', function() {
             solucion.removeChild(solucion.firstChild);
         }
     });
-    
 });
 
