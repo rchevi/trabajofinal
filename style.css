@@ -10,6 +10,11 @@ body{
    
 @import url('https://fonts.google.com/specimen/Montserrat?query=monts');
 
+
+/*a{
+   text-decoration: none;
+}*/
+
 header{   
     
    display: flex;
@@ -18,6 +23,11 @@ header{
    color: #181D31;
    padding: 0px 80px 0px 50px;
    }
+
+svg{
+   width: 150px;
+   height: 80px;
+}
 
 ul{ 
    display: flex;
@@ -31,13 +41,68 @@ li, .controles{
    text-align: center;  
    border-radius: 12px;
    padding: 10px;
-   text-decoration: none;
    box-shadow: 3px 3px 0.5px #678983;
    }
 
 li a{
-   color: #181D31
+   color: #181D31;
+   text-decoration: none;
    }
+
+#mon1 { 
+   margin: auto 0px;
+   animation: part_1 ease-in 1s;
+   animation-iteration-count: 1;
+}
+
+#mon2 {
+   margin: auto 0px;
+   animation: part_2 ease-in 2s;
+   animation-iteration-count: 1;
+}
+
+#tec1 {
+   margin: auto 0px;
+   animation: part_1 ease-in 1s;
+   animation-iteration-count: 1;
+}
+
+#tec2 {
+   margin: auto 0px;
+   animation: part_2 ease-in 2s;
+   animation-iteration-count: 1;
+}
+
+
+@keyframes part_1 {
+   0%{
+         transform: translate(0,-10px);
+         opacity: 0;
+   }
+   40%{
+         transform: translate(0,-10px);
+         opacity: 0;
+   }   
+   100%{
+         transform: translate(0,0);
+         opacity: 1;
+   }
+}
+
+@keyframes part_2 {
+   0%{
+         transform: translate(0,-10px);
+         opacity: 0;
+   }
+   40%{
+         transform: translate(0,-10px);
+         opacity: 0;
+   }   
+   100%{
+         transform: translate(0,0);
+         opacity: 1;
+   }
+}
 
 #titulo{
    background-image: url("./assets/imagenes/codigo.jpg");
