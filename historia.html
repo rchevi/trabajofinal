@@ -9,29 +9,26 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="./index.html"> 
-                <svg>
-                    <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
-                    <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
-                    <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
-                    <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
-                </svg>
-            </a>
-        </div>
+    <nav>    
+        <a href="./index.html"> 
+            <svg id="logoCompu">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+          
+        <ul>
+            <li class="boton"> <a href="./historia.html">HISTORIA</a></li>
+            <li class="boton"> <a href="./poneraprueba.html">JUGUEMOS</a></li>
+        </ul>   
         
-        <nav> 
-            <ul>
-                <li> <a href="./historia.html">HISTORIA</a></li>
-                <li> <a href="./poneraprueba.html">JUGUEMOS</a></li>
-            </ul>   
-        </nav>
-    </header> 
+    </nav> 
     
-    <div id="titulo">   
+    <header id="titulo">   
         <h1>HISTORIA DE LA PROGRAMACION</h1>
-    </div>
+    </header>
     
     <main id="mainhistoria">
         <section id="historia">
@@ -59,24 +56,23 @@
             </div>
         </section>
 
-        <section>
+        <section class="sectionVideo">
             
             <h2> Un breve video para complementar lo visto </h2>
             
-            <div class="cierre">
-                <video width=1080 height=auto controls>
+            <div class="complHistoria">
+                <video width=100% poster="./assets/imagenes/img-video.jpg">
                     <source src="./assets/video/historia-Comp.mp4" type="video/mp4">
                     <source src="./assets/video/historia-Comp.ogv" type="video/ogv">
                     Lo sentimos. Este vídeo no puede reproducirse en este navegador.
                 </video>
                 <div id="barravideo">
                     <div id="botonera">
-                        <button class = "controles"> Play </button>
-                        <button class = "controles"> Pausa </button>
+                        <button class = "controles boton" id="play"> <img src="./assets/imagenes/play.svg" alt="reproducir video"></button>
+                        <button class = "controles boton" id="pause"><img src="./assets/imagenes/pausa.svg" alt="pausar el Video"></button>
                     </div>
-                    <div>
-                        cuenta regresiva
-                    </div>
+                    <p class="tiempo">Tiempo Restante: 4:41</p>
+                        
                 </div>
             </div>
         </section>
@@ -87,7 +83,7 @@
 
     <footer>
         <div class="izquierda">
-            <img src="./assets/imagenes/logo.png" alt="">
+            <img src="./assets/imagenes/logo.png" alt="logo-programacion">
             <p>PROGRAMACION <br> E <br> HISTORIA</p>
         </div>
 
@@ -95,5 +91,7 @@
             <p>Sitio con fines educativos - Creado por Sebastian Ravenna</p>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

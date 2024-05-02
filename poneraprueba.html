@@ -9,71 +9,58 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="./index.html"> 
-                <svg><!-- "lienzo" ,"pizarra" .En este caso 500x500-->
-                    <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
-                    <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
-                    <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
-                    <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
-                </svg>
-            </a>
-        </div>
+    <nav>    
+        <a href="./index.html"> 
+            <svg id="logoCompu">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+          
+        <ul>
+            <li class="boton"> <a href="./historia.html">HISTORIA</a></li>
+            <li class="boton"> <a href="./poneraprueba.html">JUGUEMOS</a></li>
+        </ul>   
         
-        <nav> 
-            <ul>
-                <li> <a href="./historia.html">HISTORIA</a></li>
-                <li> <a href="./poneraprueba.html">JUGUEMOS</a></li>
-            </ul>   
-        </nav>
-    </header> 
+    </nav> 
     
-    <div id="titulo">   
+    <header id="titulo">   
         <h1>JUGUEMOS UN POCO</h1>
-    </div>
+    </header>
 
-    <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
     
-    <main id="mainrompecabezas">
-        <div id="rompecabezas">
-            <div class="solucion">     
-                <p>Arrastre y suelte la imágene aquí</p>
-            </div>
-
-            <div class="solucion">     
-                <p>Arrastre y suelte la imágene aquí</p>
-            </div>
-
-            <div class="solucion">     
-                <p>Arrastre y suelte la imágene aquí</p>
-            </div>
+    <main class= "mainPonerAPrueba">
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
         
-            <div class="piezas">     
-                <img src="./assets/imagenes/Rompe3.png" alt="" draggable="true">
-            </div>
+        <section class="secRompecabezas">
 
-            <div class="piezas">     
-                <img src="./assets/imagenes/Rompe1.png" alt="" draggable="true">
-            </div>
+            <div class="rompecabezas">
+            
+                <div class="solucion" id="solucion1">     
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
 
-            <div class="piezas">     
-                <img src="./assets/imagenes/rompe2.png" alt="" draggable="true">
+                <div class="solucion" id="solucion2">     
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+
+                <div class="solucion" id="solucion3">     
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
             </div>
-        </div>   
-        <button id="reiniciar">REINICIAR</button>
+            <div class="contenedorImagen">
+                <img id="pieza3" src="./assets/imagenes/Rompe3.png" alt="imagen 3 rompecabezas">
+                <img id="pieza1" src="./assets/imagenes/Rompe1.png" alt="imagen 1 rompecabezas">
+                <img id="pieza2" src="./assets/imagenes/rompe2.png" alt="imagen 2 rompecabezas">
+            </div>   
+            
+            <button id="reiniciar" class="boton">Reiniciar</button>
+        
+        </section>
     </main>
 
-    <footer>
-        <div class="izquierda">
-            <img src="./assets/imagenes/logo.png" alt="">
-            <p>PROGRAMACION <br> E <br> HISTORIA</p>
-        </div>
-
-        <div class="derecha">
-            <p>Sitio con fines educativos - Creado por Sebastian Ravenna</p>
-        </div>
-    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

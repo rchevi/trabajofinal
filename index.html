@@ -9,29 +9,26 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="./index.html"> 
-                <svg><!-- "lienzo" ,"pizarra" .En este caso 500x500-->
-                    <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
-                    <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
-                    <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
-                    <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
-                </svg>
-            </a>
-        </div>
+    <nav>    
+        <a href="./index.html"> 
+            <svg id="logoCompu">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+          
+        <ul>
+            <li class="boton"> <a href="./historia.html">HISTORIA</a></li>
+            <li class="boton"> <a href="./poneraprueba.html">JUGUEMOS</a></li>
+        </ul>   
         
-        <nav> 
-            <ul>
-                <li> <a href="./historia.html">HISTORIA</a></li>
-                <li> <a href="./poneraprueba.html">JUGUEMOS</a></li>
-            </ul>   
-        </nav>
-    </header> 
+    </nav> 
     
-    <div id="titulo">   
+    <header id="titulo">   
         <h1>PROGRAMACION E HISTORIA</h1>
-    </div>
+    </header>
 
     <h2>CONTENIDO</h2>
     
@@ -39,22 +36,22 @@
         
 
         <div class="contenido">   
-            <img src="./assets/imagenes/historia.jpg" alt="">
+            <img src="./assets/imagenes/historia.jpg" alt="imagen-historia">
             <p>Conozcamos un poco sobre la historia de la programacion</p>
-            <a href="./historia.html">Ir a Historia</a>
+            <a class="botonCont boton" href="./historia.html">Ir a Historia</a>
         </div>
             
         <div class="contenido">   
-            <img src="./assets/imagenes/juguemos.jpg" alt="">
+            <img src="./assets/imagenes/juguemos.jpg" alt="imagen-juego">
             <p>Juguemos un poco sobre la computacion</p>
-            <a href="./poneraprueba.html">Ir a Juego</a>
+            <a class="botonCont boton" href="./poneraprueba.html">Ir a Juego</a>
         </div>
 
     </main>
 
     <footer>
         <div class="izquierda">
-            <img src="./assets/imagenes/logo.png" alt="">
+            <img src="./assets/imagenes/logo.png" alt="logo-programacion">
             <p>PROGRAMACION <br> E <br> HISTORIA</p>
         </div>
 
